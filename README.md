@@ -1,7 +1,7 @@
 Simple Auto Tweet Bot
 ======================
 
-This bot saves your precious time by tweeting randomly from your past tweets and. written by python. for GAE
+This bot saves your precious time by tweeting randomly from your past tweets. written by python. for GAE
 
 
 ###1. Get Twitter API Keys  
