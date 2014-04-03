@@ -3,8 +3,7 @@ autotweetbot
 
 This bot tweets randomly from your past tweets and omits your time to use for keeping influences. written by python. for GAE
 
-###Set up
-============
+
 ###1. Get Twitter API Keys  
 
 https://apps.twitter.com/
@@ -33,9 +32,36 @@ https://appengine.google.com/
 
 `application: yourappname`
 
-###5. Set up the cron interval
+
+###4. Adjust fetches limit
+
+The default value is 200 tweets x _100_ pages.
+If you want to change, set a number to  
+
+`MAXPAGES = 100`  
+
+in main.py
+
+
+###5. List up exclusing words
+
+If you set the exclusing list, this bot doesn't pick up the tweets including any of these words.  
+
+```python
+exclude_list = [
+u'tweets includes words here is excluded from random choice',
+u'',
+u'',
+...
+
+]
+```
+
+###6. Set up the cron interval
 
 `schedule: every 300 minutes`
 
 _schedule task syntax_  
 https://developers.google.com/appengine/docs/python/config/cron
+
+
