@@ -6,9 +6,11 @@ This bot tweets randomly from your past tweets and omits your time to use for ke
 
 ###1. Get Twitter API Keys  
 
+At first, you need to register a twitter app by using the account you want to make tweet automatically.   
+
 https://apps.twitter.com/
 
-***"Consumer Keys"***, ***"Consumer Secret"***, ***"Access Token Key"***, ***"Access Token Secret"*** are neccessory.
+#####Then, you can get  ***"Consumer Keys"***, ***"Consumer Secret"***, ***"Access Token Key"***, ***"Access Token Secret"***
 
 _※please make sure that the permission (Access Level) is ***"Read, write, and direct messages"***_
 
@@ -28,7 +30,7 @@ twitter_access_keys = {
 
 https://appengine.google.com/
 
-###4. Put the appname into app.yaml
+###4. Put the appname of GAE app into app.yaml
 
 `application: yourappname`
 
@@ -65,3 +67,15 @@ _schedule task syntax_
 https://developers.google.com/appengine/docs/python/config/cron
 
 
+###7. Deploy it  
+
+Now your twitter account begins to tweet automatically.  
+
+  
+  
+  
+  
+  
+---
+This program is including Tweepy 2.2  
+https://github.com/tweepy/tweepy
