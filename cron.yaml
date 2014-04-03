@@ -1,0 +1,5 @@
+cron:
+- description: regulary auto tweet 
+  url: /autotweet
+  schedule: every 300 minutes
+  timezone: Asia/Tokyo
