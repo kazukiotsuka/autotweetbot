@@ -27,7 +27,7 @@ MAXPAGES = 100
 
 class AutoTweet(webapp2.RequestHandler):
 	def get(self):
-		alltweets = self.getTweets()
+		alltweets = list(set(self.getTweets()))
 		r = random.randint(0,len(alltweets)-1)
 		logging.info(r)
 		logging.info(alltweets[r])
